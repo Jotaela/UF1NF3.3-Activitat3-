@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="matricula">
+        <xs:complexType>
+            <xs:sequence>
+              	<xs:element name="casa" type="xs:string"/>
+                <xs:element ref="alumnes"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumnes">
+        <xs:complexType>
+            <xs:sequence>
+              	<xs:element ref="alumne" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumne">
+        <xs:complexType>
+            <xs:sequence>
+              	<xs:element name="nom" type="xs:string"/>
+                <xs:element name="any" type="xs:integer"/>
+                <xs:element ref="assignatures"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="assignatures">
+        <xs:complexType>
+            <xs:sequence>
+              	<xs:element name="assignatura" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

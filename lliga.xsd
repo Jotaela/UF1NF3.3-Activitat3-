@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="quidditch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jornada" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jornada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="partit" minOccurs="2" maxOccurs="2"/>
+            </xs:sequence>
+            <xs:attribute name="num" type="xs:integer" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dia" type="xs:string"/>
+                <xs:element ref="equip" minOccurs="2" maxOccurs="2"/>
+            </xs:sequence>
+            <xs:attribute name="num" type="xs:integer" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="equip">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nom" type="xs:string"/>
+                <xs:element name="resultat" type="xs:integer"/>
+                <xs:element ref="gols"/>
+            </xs:sequence>
+            <xs:attribute name="juga" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gols">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jugador" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

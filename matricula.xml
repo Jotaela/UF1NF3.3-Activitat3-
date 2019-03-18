@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<matricula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation='matricula.xsd'>
+  <casa>Gryffindor</casa>
+  <alumnes>
+    <alumne>
+      <nom>Hermione Granger</nom>
+      <any>2013</any>
+      <assignatures>
+        <assignatura>Defensa contra las artes oscuras</assignatura>
+        <assignatura>Pociones</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Ronald Weasley</nom>
+      <any>2013</any>
+      <assignatures>
+        <assignatura>Pociones</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Harry Potter</nom>
+      <any>2013</any>
+      <assignatures>
+        <assignatura>Pociones</assignatura>
+        <assignatura>Herbologia</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Neville Longbottom</nom>
+      <any>2013</any>
+      <assignatures>
+        <assignatura>Defensa contra las artes oscuras</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Ginny Weasley</nom>
+      <any>2014</any>
+      <assignatures>
+        <assignatura>Defensa contra las artes oscuras</assignatura>
+        <assignatura>Pociones</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Lee Jordan</nom>
+      <any>2011</any>
+      <assignatures>
+        <assignatura>Defensa contra las artes oscuras</assignatura>
+        <assignatura>Pociones</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Oliver Wood</nom>
+      <any>2011</any>
+      <assignatures>
+        <assignatura>Pociones</assignatura>
+      </assignatures>
+    </alumne>
+    <alumne>
+      <nom>Colin Creevey</nom>
+      <any>2014</any>
+      <assignatures>
+        <assignatura>Defensa contra las artes oscuras</assignatura>
+        <assignatura>Pociones</assignatura>
+        <assignatura>Herbologia</assignatura>
+      </assignatures>
+    </alumne>
+  </alumnes>
+</matricula>
